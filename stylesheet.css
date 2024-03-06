@@ -71,6 +71,18 @@ header h3{
 #hSection2{
   display: none;
 }
+#searchDiv{
+
+
+}
+
+
+
+
+
+
+
+
 #search,#cart,#myaccount,#mylearning,#notification,#favorite{
 display: none;
 
@@ -115,13 +127,13 @@ display: none;
 /* Styles for screens between 992px and 1199.98px (Large devices) */
 @media (min-width: 1000px) and (max-width: 1199px) {
   /* Your styles for large screens go here */
-  #menu{
+  #menu,#search{
     display: none;
   }
   #hSection2{
     display: block;
   }
-  #SearchDiv,#cart,#myaccount,#mylearning,#notification,#favorite{
+  #searchDiv,#cart,#myaccount,#mylearning,#notification,#favorite{
     display: block;
     
     }
@@ -136,16 +148,17 @@ display: none;
     font-weight: 800;
     font-size: 35px;
   }
-  #menu{
+  #menu,#search{
     display: none;
   }
   #hSection2{
     display: block;
   }
-  #SearchDiv,#cart,#myaccount,#mylearning,#notification,#favorite{
+  #searchDiv,#cart,#myaccount,#mylearning,#notification,#favorite{
     display: block;
     
     }
+  
 
 
 
