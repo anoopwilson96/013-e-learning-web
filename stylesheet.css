@@ -1,0 +1,155 @@
+
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  
+
+}
+h1, h2, h3, h4, h5, h6,nav{
+  font-optical-sizing: auto;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+header a,li{
+  text-decoration: none;
+  color: black;
+
+}
+/* Logo font and logo */
+header h3{
+  font-weight: 800;
+}
+.hSection1 img{
+  height: 45px;
+}
+#logo{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: flex-start;
+}
+.hSection1 > div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.hSection1 nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+
+#hSection2 ul{
+  font: weight 600px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 1rem;
+  
+}
+
+#hSection2 li :hover{
+  border: none ;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: .45rem;
+  padding-right: .45rem;
+  border-radius: .85rem ;
+  background-color: rgba(182, 171, 171, 0.545) ;
+}
+
+#hSection2{
+  display: none;
+}
+#search,#cart,#myaccount,#mylearning,#notification,#favorite{
+display: none;
+
+}
+
+
+
+
+
+
+
+
+
+/* Styles for screens between 576px and 767.98px (Small devices) */
+@media (min-width: 300px) and (max-width: 699px) {
+  /* Your styles for small screens go here */
+  #menu{
+    display: block;
+  }
+  #search,#cart,#myaccount{
+    display: none;
+  }
+  #hSection2{
+    display: none;
+  }
+}
+
+
+/* Styles for screens between 768px and 991.98px (Medium devices) */
+@media (min-width: 700px) and (max-width: 999px) {
+  /* Your styles for medium screens go here */
+ 
+  #search,#cart,#menu,#myaccount{
+    display: block;
+  }
+  #hSection2{
+    display: none;
+  }
+
+
+}
+/* Styles for screens between 992px and 1199.98px (Large devices) */
+@media (min-width: 1000px) and (max-width: 1199px) {
+  /* Your styles for large screens go here */
+  #menu{
+    display: none;
+  }
+  #hSection2{
+    display: block;
+  }
+  #SearchDiv,#cart,#myaccount,#mylearning,#notification,#favorite{
+    display: block;
+    
+    }
+
+
+
+}
+/* Styles for screens 1200px and larger (Extra Large devices) */
+@media (min-width: 1200px) {
+  /* Your styles for extra large screens go here */
+  header h3{
+    font-weight: 800;
+    font-size: 35px;
+  }
+  #menu{
+    display: none;
+  }
+  #hSection2{
+    display: block;
+  }
+  #SearchDiv,#cart,#myaccount,#mylearning,#notification,#favorite{
+    display: block;
+    
+    }
+
+
+
+
+
+
+}
