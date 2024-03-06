@@ -37,6 +37,11 @@ header h3{
   align-items: center;
 
 }
+
+.hSection1{
+  max-width: 1500px;
+  margin: auto;
+}
 .hSection1 nav{
   display: flex;
   flex-direction: row;
@@ -62,18 +67,46 @@ header h3{
   border: none ;
   padding-top: .5rem;
   padding-bottom: .5rem;
-  padding-left: .45rem;
-  padding-right: .45rem;
-  border-radius: .85rem ;
-  background-color: rgba(182, 171, 171, 0.545) ;
+  padding-left: .65rem;
+  padding-right: .65rem;
+  border-radius: 50px ;
+  background-color: hwb(180 95% 3%); ;
 }
 
 #hSection2{
   display: none;
+  max-width:1200px;
+  margin: auto;
+
 }
-#searchDiv{
+#hSection3 {
+  margin-top: 1.5rem;
+  border-bottom: solid 1px ;
 
+}
 
+#searchDiv {
+  max-width: max-content;
+  padding: .55rem ;
+  border-radius: 50px;
+  background-color: hwb(180 95% 3%);
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: center; 
+
+}
+
+.searchIcon {
+  font-size: 1.25rem; 
+  margin-right: 0.5rem; 
+}
+.searchInput {
+  border: none;
+  background: transparent;
+  outline: none;
+  fill: none;
+  margin: 0;
 }
 
 
@@ -83,7 +116,8 @@ header h3{
 
 
 
-#search,#cart,#myaccount,#mylearning,#notification,#favorite{
+
+#searchDiv, #search,#cart,#myaccount,#mylearning,#notification,#favorite{
 display: none;
 
 }
@@ -102,7 +136,7 @@ display: none;
   #menu{
     display: block;
   }
-  #search,#cart,#myaccount{
+  #searchDiv,#search,#cart,#myaccount{
     display: none;
   }
   #hSection2{
@@ -118,7 +152,7 @@ display: none;
   #search,#cart,#menu,#myaccount{
     display: block;
   }
-  #hSection2{
+  #searchDiv,#hSection2{
     display: none;
   }
 
@@ -127,7 +161,7 @@ display: none;
 /* Styles for screens between 992px and 1199.98px (Large devices) */
 @media (min-width: 1000px) and (max-width: 1199px) {
   /* Your styles for large screens go here */
-  #menu,#search{
+  #searchDiv,#menu,#search{
     display: none;
   }
   #hSection2{
