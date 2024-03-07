@@ -3,7 +3,6 @@
   padding:0;
   margin: 0;
   box-sizing: border-box;
-  
 
 }
 h2, h3, h4, h5, h6,nav{
@@ -244,7 +243,8 @@ z-index: 1;
 }
 
 .grid1{
-  margin-top: 4rem;
+  padding: .75rem;
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr ;
   grid-row: 1fr 1fr;
@@ -256,7 +256,9 @@ z-index: 1;
 }
 
 
-
+.mSection2{
+  margin-bottom: 5rem;
+}
 
 
 
